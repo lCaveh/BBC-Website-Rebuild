@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { PrimaryNavComponent } from './primary-nav/primary-nav.component';
+import { SubNavComponent } from './sub-nav/sub-nav.component';
 
 
 
@@ -12,7 +13,8 @@ import { PrimaryNavComponent } from './primary-nav/primary-nav.component';
   declarations: [
     AppComponent,
     MainNavComponent,
-    PrimaryNavComponent
+    PrimaryNavComponent,
+    SubNavComponent
   ],
   imports: [
     BrowserModule
