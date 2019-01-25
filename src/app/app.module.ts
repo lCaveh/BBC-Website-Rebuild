@@ -9,6 +9,8 @@ import { SubNavComponent } from './sub-nav/sub-nav.component';
 import { HomeComponent } from './home/home.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { MainArticleComponent } from './main-article/main-article.component';
+import { SideArticleComponent } from './side-article/side-article.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent},
@@ -21,7 +23,9 @@ const appRoutes: Routes = [
     MainNavComponent,
     PrimaryNavComponent,
     SubNavComponent,
-    HomeComponent
+    HomeComponent,
+    MainArticleComponent,
+    SideArticleComponent
   ],
   imports: [
     BrowserModule,

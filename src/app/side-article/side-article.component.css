@@ -1,0 +1,22 @@
+.tag {
+  font-size: 80%;
+  text-transform: uppercase;
+  padding: 0px 4px;
+  margin-right: 5px;
+}
+.tag.sport { background-color: #ffdf43; }
+
+.post-data {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0 0 0 -10px;
+  padding-left: 30px;
+  background-image: url("//static.bbci.co.uk/news/1.66.2287/img/news--icons-sprite.png");
+  background-position: left -4011px;
+  background-repeat: no-repeat;
+}
+.post-data a.country {
+  color: #cc0101;
+  margin-left: 15px;
+  position: relative;
+}
