@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-}
 a {
   color: black;
   text-decoration: none;
@@ -16,7 +12,6 @@ a {
   margin: 0 auto;
 }
 
-/*///////// NAV /////////*/
 nav a { display: block; }
 nav a.underlined {
   text-align: center;
