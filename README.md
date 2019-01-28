@@ -1,5 +1,5 @@
 # BbcNews
-
+It is probably count as a  Fake NEWS!!! I just tried to clone BBC news website. The users can click on different tabs and it will open different routes to show them some news related to what they select.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Support and contact details
+
+_Contact Kaveh Saleminejad - lcaveh@gmail.com._
+
+## GitHub page's links
+
+https://lcaveh.github.io/portfolio/index.html
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2018 **_Kaveh Saleminejad_**
