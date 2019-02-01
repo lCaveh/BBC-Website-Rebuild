@@ -1,15 +1,14 @@
 <div class="full-width">
-  <a href="#">
-    <h2>Headline</h2>
-    <img class="article-image" src="//placehold.it/400x220" alt="Article image">
-    <p>Related headline article text. Some more text so you can see what it looks like with multiple lines.</p>
-    <p>Even a new paragraph.</p>
+  <a href="mainNews.sourceurl">
+    <h2>{{mainNews.type}}</h2>
+    <img class="article-image" src="mainNews.imageurl" alt="Article image">
+    <p>{{mainNews.title}}</p>
+    <p>{{mainNews.detail}}</p>
   </a>
   <p class="post-data">Time posted<a class="country" href="#">Country</a></p>
   <ul class="related-links">
-    <li><a href="#"><div class="icon video"></div>Video Content 1</a></li>
-    <li><a href="#"><div class="icon video"></div>Video Content 2</a></li>
-    <li><a href="#">Normal Content 1</a></li>
-    <li><a href="#">Normal Content 2</a></li>
+    <li><a href="mainNews.videourl"><div class="icon video"></div>{{mainNews.title}}</a></li>
+    <li><a href="mainNews.sourceurl">{{mainNews.source}}</a></li>
+
   </ul>
 </div>
