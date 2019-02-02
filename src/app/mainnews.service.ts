@@ -4,11 +4,16 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class MainnewsService {
-mainNews: FirebaseListObservable<any[]>;
+  mainNews: FirebaseListObservable<any[]>;
+  sideNews: FirebaseListObservable<any[]>;
   constructor(private database: AngularFireDatabase) {
     this.mainNews = database.list('mainnews');
+    this.sideNews = database.list('sidenews');
   }
   getMainNews(){
-  return this.mainNews;
-}
+    return this.mainNews;
+  }
+  getSideNews(){
+    return this.sideNews;
+  }
 }

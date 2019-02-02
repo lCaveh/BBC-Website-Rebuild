@@ -11,9 +11,11 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class HomeComponent implements OnInit {
   mainNews :FirebaseListObservable<any[]>;
+  sideNews :FirebaseListObservable<any[]>;
   constructor(private mainNewsService:MainnewsService) { }
   ngOnInit() {
     this.mainNews = this.mainNewsService.getMainNews();
+    this.sideNews = this.mainNewsService.getSideNews();
   }
 
 }

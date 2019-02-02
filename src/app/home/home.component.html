@@ -1,16 +1,11 @@
 <main>
   <div class="content">
+
     <div *ngFor="let article of mainNews | async" class="main-content">
-      {{article.type}}
-      <!-- <app-main-article></app-main-article>
-      <app-main-article></app-main-article>
-      <app-main-article></app-main-article> -->
+      <app-main-article [mainNews]="article"></app-main-article>
     </div>
-    <div class="sidebar">
-      <h2>Watch/Listen</h2>
-      <app-side-article></app-side-article>
-      <app-side-article></app-side-article>
-      <app-side-article></app-side-article>
+    <div *ngFor="let sideArticle of sideNews | async" class="sidebar">
+      <app-side-article [sideNews]="sideArticle"></app-side-article>
     </div>
   </div>
 </main>

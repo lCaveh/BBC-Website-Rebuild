@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-side-article',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-article.component.css']
 })
 export class SideArticleComponent implements OnInit {
-
+  @Input() sideNews:any;
   constructor() { }
 
   ngOnInit() {

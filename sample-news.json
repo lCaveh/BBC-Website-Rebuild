@@ -2,23 +2,41 @@
   "mainnews": [{
     "type": "Headline",
     "title":"Important news",
-    "detail":"There is some important detail in this article. Please notice to headline to see how it is important",
+    "detail":"There is some important detail in this article.",
     "source":"BBC News",
     "sourceurl":"https://www.bbc.com/news",
-    "imageurl":"https://cdn.vox-cdn.com/thumbor/zcRpCH7OKoWgoN7kai3F3lrckr8=/0x0:1600x1249/920x613/filters:focal(885x400:1141x656):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/62979814/freshman_A.0.jpg",
-    "videourl":"https://cdn.vox-cdn.com/thumbor/zcRpCH7OKoWgoN7kai3F3lrckr8=/0x0:1600x1249/920x613/filters:focal(885x400:1141x656):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/62979814/freshman_A.0.jpg"
+    "imageurl":"../.././assets/img/news1.png"
   },
   {
     "type": "Headline",
     "title":"Important news",
-    "detail":"There is some important detail in this article. Please notice to headline to see how it is important",
+    "detail":"There is some important detail in this article.",
     "source":"BBC News",
     "sourceurl":"https://www.bbc.com/news",
-    "imageurl":"https://cdn.vox-cdn.com/thumbor/zcRpCH7OKoWgoN7kai3F3lrckr8=/0x0:1600x1249/920x613/filters:focal(885x400:1141x656):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/62979814/freshman_A.0.jpg",
-    "videourl":"https://cdn.vox-cdn.com/thumbor/zcRpCH7OKoWgoN7kai3F3lrckr8=/0x0:1600x1249/920x613/filters:focal(885x400:1141x656):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/62979814/freshman_A.0.jpg"
+    "imageurl":"../.././assets/img/news2.jpg"
+  },
+  {
+    "type": "Weather",
+    "title":"Climate Change",
+    "detail":"There is some important detail in this article.",
+    "source":"BBC News",
+    "sourceurl":"https://www.bbc.com/news",
+    "imageurl":"../.././assets/img/news6.jpg"
   }
 ],
 "sidenews":[{
-
-  }]
+    "type":"Headline",
+    "title":"Debate of the day",
+    "date":"2-1-2019",
+    "time":"3:42",
+    "imageurl":"../.././assets/img/news3.jpg"
+  },
+  {
+    "type":"Headline",
+    "title":"Dogs Life",
+    "date":"2-1-2019",
+    "time":"3:42",
+    "imageurl":"../.././assets/img/news3.jpg"
+  }
+]
 }
