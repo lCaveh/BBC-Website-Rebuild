@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class MainNavComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
   }
 
