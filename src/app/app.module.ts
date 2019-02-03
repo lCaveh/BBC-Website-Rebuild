@@ -7,6 +7,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { PrimaryNavComponent } from './primary-nav/primary-nav.component';
 import { SubNavComponent } from './sub-nav/sub-nav.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { MainArticleComponent } from './main-article/main-article.component';
@@ -14,10 +15,15 @@ import { SideArticleComponent } from './side-article/side-article.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent},
-  { path: '', redirectTo: 'home',pathMatch: 'full'}
+  { path: 'admin', component: AdminComponent},
+
+  { path: '', redirectTo: 'home',pathMatch: 'full'},
+  { path: '**', redirectTo: 'home',pathMatch: 'full'},
+
 ]
 
 export const firebaseConfig = {
@@ -35,13 +41,15 @@ export const firebaseConfig = {
     SubNavComponent,
     HomeComponent,
     MainArticleComponent,
-    SideArticleComponent
+    SideArticleComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

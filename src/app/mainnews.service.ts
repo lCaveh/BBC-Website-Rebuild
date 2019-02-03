@@ -16,4 +16,7 @@ export class MainnewsService {
   getSideNews(){
     return this.sideNews;
   }
+  addMainNews(newMainNews: MainNews) {
+  this.mainNews.push(newMainNews);
+}
 }

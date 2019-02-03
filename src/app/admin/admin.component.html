@@ -1,0 +1,21 @@
+<div *ngIf="isLoggedIn">
+  <button (click)="logout()">Click here to logout</button>
+  <h1>Add news to database</h1>
+  <label>Enter main news type:</label>
+  <input type="text" #newMainType required><br>
+  <label>Enter main news title:</label>
+  <input type="text" #newMainTitle required><br>
+  <label>Enter main news detail:</label>
+  <input type="text" #newMainDetail required><br>
+  <label>Enter news source:</label>
+  <input type="text" #newMainSource required><br>
+  <label>Enter news sourceurl:</label>
+  <input type="text" #newMainSourceUrl required><br>
+  <label>Enter news type:</label>
+  <input type="text" #newMainImageUrl required><br>
+  <button (click)="submitForm(newMainType.value, newMainTitle.value, newMainDetail.value,newMainSource.value, newMainSourceUrl.value, newMainImageUrl.value); newMainType.value=''; newMainTitle.value=''; newMainDetail.value=''; newMainSource.value=''; newMainSourceUrl.value=''; newMainImageUrl.value=''">Submit Main News</button>
+</div>
+
+<div *ngIf="!isLoggedIn">
+  <button (click)="login()">Click here for login</button>
+</div>
