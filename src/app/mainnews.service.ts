@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { MainNews } from './mainnews.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { MainNews } from './mainnews.model';
 
 @Injectable()
 export class MainnewsService {
@@ -17,6 +17,6 @@ export class MainnewsService {
     return this.sideNews;
   }
   addMainNews(newMainNews: MainNews) {
-  this.mainNews.push(newMainNews);
-}
+    this.mainNews.push(newMainNews);
+  }
 }

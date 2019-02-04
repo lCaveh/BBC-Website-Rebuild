@@ -2,7 +2,7 @@
   <div class="content">
 
     <div *ngFor="let article of mainNews | async" class="main-content">
-      <app-main-article [mainNews]="article"></app-main-article>
+      <app-main-article *ngIf="article.type.toLowerCase()===name" [mainNews]="article"></app-main-article>
     </div>
     <div *ngFor="let sideArticle of sideNews | async" class="sidebar">
       <app-side-article [sideNews]="sideArticle"></app-side-article>
