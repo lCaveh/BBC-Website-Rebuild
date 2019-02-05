@@ -1,5 +1,5 @@
 # BbcNews
-It is probably count as a  Fake NEWS!!! I just tried to clone BBC news website. The users can click on different tabs and it will open different routes to show them some news related to what they select.
+It is probably count as a Fake NEWS!!! I just tried to clone BBC news website. The users can click on different tabs and it will open different routes to show them some news related to the route they select.The admin has access to admin page where he can add new main or side news to database.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Development server
@@ -12,6 +12,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Create a database
 - Create api-keys.ts file into app folder.
 - Copy your firebase config there.
+
+## Setup Authentication
+- Go to https://firebase.google.com
+- Create an account
+- Select Authentication
+- Create a username and password there and enable google account
 
 ## Run the project on firebase
 Simply click on this link:
