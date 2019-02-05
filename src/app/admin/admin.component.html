@@ -7,13 +7,26 @@
   <input type="text" #newMainTitle required><br>
   <label>Enter main news detail:</label>
   <input type="text" #newMainDetail required><br>
-  <label>Enter news source:</label>
+  <label>Enter main news source:</label>
   <input type="text" #newMainSource required><br>
-  <label>Enter news sourceurl:</label>
+  <label>Enter main news source url:</label>
   <input type="text" #newMainSourceUrl required><br>
-  <label>Enter news type:</label>
+  <label>Enter main news image url:</label>
   <input type="text" #newMainImageUrl required><br>
-  <button (click)="submitForm(newMainType.value, newMainTitle.value, newMainDetail.value,newMainSource.value, newMainSourceUrl.value, newMainImageUrl.value); newMainType.value=''; newMainTitle.value=''; newMainDetail.value=''; newMainSource.value=''; newMainSourceUrl.value=''; newMainImageUrl.value=''">Submit Main News</button>
+  <button (click)="submitMainForm(newMainType.value, newMainTitle.value, newMainDetail.value,newMainSource.value, newMainSourceUrl.value, newMainImageUrl.value); newMainType.value=''; newMainTitle.value=''; newMainDetail.value=''; newMainSource.value=''; newMainSourceUrl.value=''; newMainImageUrl.value=''">Submit Main News</button>
+  <br><br>
+  <label>Enter side news type:</label>
+  <input type="text" #newSideType required><br>
+  <label>Enter side news title:</label>
+  <input type="text" #newSideTitle required><br>
+  <label>Enter side news date:</label>
+  <input type="text" #newSideDate required><br>
+  <label>Enter side news time:</label>
+  <input type="text" #newSideTime required><br>
+  <label>Enter side news image url:</label>
+  <input type="text" #newSideImageUrl required><br>
+  <button (click)="submitSideForm(newSideType.value, newSideTitle.value, newSideDate.value,newSideTime.value, newSideImageUrl.value); newSideType.value=''; newSideTitle.value=''; newSideDate.value=''; newSideTime.value=''; newSideImageUrl.value=''">Submit Side News</button>
+
 </div>
 
 <div *ngIf="!isLoggedIn">

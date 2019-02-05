@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MainNews} from "../mainnews.model";
+import { SideNews} from "../sidenews.model";
 import { MainnewsService} from "../mainnews.service"
 import { AuthenticationService } from '../authentication.service';
 @Component({
@@ -26,15 +27,18 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
   login() {
-    console.log("login")
   this.authService.login();
 }
 
 logout() {
   this.authService.logout();
 }
-  submitForm(newMainType:string, newMainTitle:string, newMainDetail:string,newMainSource:string, newMainSourceUrl:string, newMainImageUrl:string){
+  submitMainForm(newMainType:string, newMainTitle:string, newMainDetail:string,newMainSource:string, newMainSourceUrl:string, newMainImageUrl:string){
     var mainNews: MainNews= new MainNews(newMainType, newMainTitle, newMainDetail,newMainSource, newMainSourceUrl, newMainImageUrl);
     this.mainNewsService.addMainNews(mainNews);
+  }
+  submitSideForm(newSideType:string, newSideTitle:string, newSideDate:string,newSideTime:string, newSideImageUrl:string){
+    var sideNews: SideNews= new SideNews(newSideType, newSideTitle, newSideDate,newSideTime, newSideImageUrl);
+    this.mainNewsService.addSideNews(sideNews);
   }
 }
