@@ -1,6 +1,5 @@
 <main>
   <div class="content">
-
     <div *ngFor="let article of mainNews | async" class="main-content">
       <app-main-article *ngIf="article.type.toLowerCase()===name" [mainNews]="article"></app-main-article>
     </div>

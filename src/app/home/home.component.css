@@ -12,6 +12,7 @@ main .sidebar {
 
 main .main-content {
   width: 69%;
+  float: left;
   padding: 0 15px 0 6px;
 }
 main .main-content ::ng-deep  {
@@ -78,6 +79,7 @@ main .main-content ::ng-deep  .related-links .icon.video { background-position: 
 
 main .sidebar {
   width: 29%;
+  float: right;
   padding-left: 15px;
   border-left: 1px solid #eee;
 }
